@@ -127,6 +127,7 @@ def relatorio():
        if t["data"].endswith(mes_atual):
           if t["tipo"] == "entrada" :
              total_entradas += t["valor"]
+             label = "Entradas"
           else:
              total_saidas += t["valor"]
              label = "Saídas"
